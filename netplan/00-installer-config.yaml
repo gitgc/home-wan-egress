@@ -1,0 +1,17 @@
+network:
+  ethernets:
+    enp1s0:
+      dhcp4: true
+      dhcp4-overrides:
+        route-metric: 20
+    enp2s0:
+      dhcp4: false
+      addresses:
+        - 10.0.0.8/28
+      nameservers: 
+        addresses: [8.8.8.8, 1.1.1.1]
+#    enp3s0:
+#      dhcp4: false
+#    enp4s0:
+#      dhcp4: false
+  version: 2
